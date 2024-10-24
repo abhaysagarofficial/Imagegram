@@ -1,8 +1,29 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'customWidgets/photoBooth.dart';
 
 
-void main() {
+void main() async{
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if(kIsWeb){
+    await Firebase.initializeApp(
+        options: const FirebaseOptions(
+            apiKey: "AIzaSyDp988jFxJDrBlelw7q3kfh3wHR5rTOib0",
+            authDomain: "imagegram-356ca.firebaseapp.com",
+            projectId: "imagegram-356ca",
+            storageBucket: "imagegram-356ca.appspot.com",
+            messagingSenderId: "621545575805",
+            appId: "1:621545575805:web:2781c1c46a080e50ea6814",
+            measurementId: "G-5S24Q41002"
+        ));
+  }
+  else{
+    await Firebase.initializeApp();
+  }
+
   runApp(const MyApp());
 }
 

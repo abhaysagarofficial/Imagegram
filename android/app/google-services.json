@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "621545575805",
+    "project_id": "imagegram-356ca",
+    "storage_bucket": "imagegram-356ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621545575805:android:e646b7daad86484fea6814",
+        "android_client_info": {
+          "package_name": "com.example.imagegram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5iJVXmJdXNhOxTjtKOUnNFztFSaAWIEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
